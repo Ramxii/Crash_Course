@@ -5,7 +5,7 @@ for food in foods:
 
 # foods[0] = 'burger'
 
-foods = ('cinnamon rolls','burger','cheeseburger', 'wings', 'salad', 'breadfruit', 'rice' )
+foods = ('cinnamon rolls','burger','cheeseburger', 'wings', 'salad')
 
 print("The restaurant offers: ")
 for food in foods:
