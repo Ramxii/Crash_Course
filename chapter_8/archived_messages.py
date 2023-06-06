@@ -1,14 +1,17 @@
-unsent_messages = ['hey', 'hello', 'whatup', 'brb']
+messages = ['hey', 'hi', 'whatsup', 'brb', 'lol']
 sent_messages = []
 
+print("---Send Messages---")
+
 def send_messages(texts, sent_texts):
-    """Prints all messages in a list"""
-    while unsent_messages:
-        current_text = texts.pop() 
-        sent_texts.append(current_text)
+    """Prints each text message and moves it to a new list"""
+    while texts:
+        for text in texts:
+            text = texts.pop()
+            sent_texts.append(text)
+    return
 
-send_messages(unsent_messages[:], sent_messages)
+send_messages(messages[:], sent_messages)
 
-print(unsent_messages)
+print(messages)
 print(sent_messages)
-
